@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Notepad</title>
+    <meta name="description" content="Beautiful animated notepad with page-turning effects">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="notepad.css">
+</head>
+<body>
+    <div class="background-pattern"></div>
+    
+    <div class="notepad-container">
+        <h1 class="app-title"> My Animated Notepad</h1>
+        
+        <div class="notepad">
+            <!-- Notepad Binding -->
+            <div class="notepad-binding">
+                <div class="binding-ring"></div>
+                <div class="binding-ring"></div>
+                <div class="binding-ring"></div>
+                <div class="binding-ring"></div>
+                <div class="binding-ring"></div>
+            </div>
+            
+            <!-- Pages Stack (for depth effect) -->
+            <div class="pages-stack">
+                <div class="stack-page"></div>
+                <div class="stack-page"></div>
+                <div class="stack-page"></div>
+            </div>
+            
+            <!-- Active Pages -->
+            <div class="pages-wrapper">
+                <!-- Page 1 -->
+                <div class="page active" data-page="1">
+                    <div class="page-header">
+                        <span class="page-number">Page 1</span>
+                        <span class="page-date">December 13, 2025</span>
+                    </div>
+                    <div class="page-content">
+                        <h2 class="page-title">Welcome to My Notepad! </h2>
+                        <p class="note-text">This is a beautiful animated notepad with smooth page transitions.</p>
+                        <p class="note-text">Click the navigation buttons below to flip through the pages!</p>
+                        <div class="note-highlight">
+                            <strong>Features:</strong>
+                            <ul>
+                                <li>Smooth page-turning animations</li>
+                                <li>Beautiful gradient design</li>
+                                <li>Realistic notepad appearance</li>
+                                <li>Interactive navigation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page-decoration">
+                        <div class="doodle-star"></div>
+                        <div class="doodle-heart"></div>
+                    </div>
+                </div>
+                
+                <!-- Page 2 -->
+                <div class="page" data-page="2">
+                    <div class="page-header">
+                        <span class="page-number">Page 2</span>
+                        <span class="page-date">December 13, 2025</span>
+                    </div>
+                    <div class="page-content">
+                        <h2 class="page-title">My Ideas </h2>
+                        <p class="note-text">Here are some creative ideas I want to explore:</p>
+                        <div class="checklist">
+                            <div class="checklist-item">
+                                <input type="checkbox" id="idea1" checked>
+                                <label for="idea1">Create amazing animations</label>
+                            </div>
+                            <div class="checklist-item">
+                                <input type="checkbox" id="idea2">
+                                <label for="idea2">Learn advanced CSS techniques</label>
+                            </div>
+                            <div class="checklist-item">
+                                <input type="checkbox" id="idea3">
+                                <label for="idea3">Build interactive web experiences</label>
+                            </div>
+                            <div class="checklist-item">
+                                <input type="checkbox" id="idea4">
+                                <label for="idea4">Master JavaScript animations</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-decoration">
+                        <div class="doodle-lightbulb"></div>
+                        <div class="doodle-rocket"></div>
+                    </div>
+                </div>
+                
+                <!-- Page 3 -->
+                <div class="page" data-page="3">
+                    <div class="page-header">
+                        <span class="page-number">Page 3</span>
+                        <span class="page-date">December 13, 2025</span>
+                    </div>
+                    <div class="page-content">
+                        <h2 class="page-title">Daily Goals </h2>
+                        <div class="goals-grid">
+                            <div class="goal-card">
+                                <div class="goal-icon">🌅</div>
+                                <h3>Morning</h3>
+                                <p>Start with meditation and exercise</p>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-icon">💻</div>
+                                <h3>Work</h3>
+                                <p>Focus on creative projects</p>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-icon">📚</div>
+                                <h3>Learning</h3>
+                                <p>Read and expand knowledge</p>
+                            </div>
+                            <div class="goal-card">
+                                <div class="goal-icon">🌙</div>
+                                <h3>Evening</h3>
+                                <p>Reflect and plan tomorrow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Page 4 -->
+                <div class="page" data-page="4">
+                    <div class="page-header">
+                        <span class="page-number">Page 4</span>
+                        <span class="page-date">December 13, 2025</span>
+                    </div>
+                    <div class="page-content">
+                        <h2 class="page-title">Inspirational Quotes </h2>
+                        <div class="quote-box">
+                            <p class="quote-text">"The only way to do great work is to love what you do."</p>
+                            <p class="quote-author">- Steve Jobs</p>
+                        </div>
+                        <div class="quote-box">
+                            <p class="quote-text">"Innovation distinguishes between a leader and a follower."</p>
+                            <p class="quote-author">- Steve Jobs</p>
+                        </div>
+                        <div class="quote-box">
+                            <p class="quote-text">"Design is not just what it looks like. Design is how it works."</p>
+                            <p class="quote-author">- Steve Jobs</p>
+                        </div>
+                    </div>
+                    <div class="page-decoration">
+                        <div class="doodle-sparkle"></div>
+                    </div>
+                </div>
+                
+                <!-- Page 5 -->
+                <div class="page" data-page="5">
+                    <div class="page-header">
+                        <span class="page-number">Page 5</span>
+                        <span class="page-date">December 13, 2025</span>
+                    </div>
+                    <div class="page-content">
+                        <h2 class="page-title">Thank You! </h2>
+                        <p class="note-text centered">Thanks for exploring this animated notepad!</p>
+                        <p class="note-text centered">I hope you enjoyed the smooth page transitions and beautiful design.</p>
+                        <div class="thank-you-box">
+                            <div class="emoji-large"></div>
+                            <p class="note-text"><strong>Keep creating amazing things!</strong></p>
+                        </div>
+                    </div>
+                    <div class="page-decoration">
+                        <div class="doodle-confetti"></div>
+                        <div class="doodle-party"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Controls -->
+        <div class="navigation">
+            <button class="nav-btn prev-btn" id="prevBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+                <span>Previous</span>
+            </button>
+            
+            <div class="page-indicator">
+                <span class="current-page">1</span>
+                <span class="separator">/</span>
+                <span class="total-pages">5</span>
+            </div>
+            
+            <button class="nav-btn next-btn" id="nextBtn">
+                <span>Next</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+    </div>
+    
+    <script src="notepad.js"></script>
+</body>
+</html>
