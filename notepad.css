@@ -16,6 +16,21 @@ body {
     overflow-x: hidden;
 }
 
+.notepad-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.notepad-link:hover {
+    color: #f093fb;
+}
+
 .background-pattern {
     position: fixed;
     top: 0;
