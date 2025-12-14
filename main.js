@@ -49,16 +49,6 @@ if (circularSvg) {
     circularSvg.insertBefore(defs, circularSvg.firstChild);
 }
 
-// Add hover effect sound (optional - commented out by default)
-// const loaderWrappers = document.querySelectorAll('.loader-wrapper');
-// loaderWrappers.forEach(wrapper => {
-//     wrapper.addEventListener('mouseenter', () => {
-//         // Add your sound effect here if desired
-//         console.log('Loader hovered');
-//     });
-// });
-
-// Performance optimization: Reduce animations when tab is not visible
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
         document.body.style.animationPlayState = 'paused';
@@ -67,4 +57,4 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-console.log('🎨 Premium Loading Animations Loaded Successfully!');
+console.log('Premium Loading Animations Loaded Successfully!');
