@@ -192,6 +192,9 @@ body {
     transform: rotateY(0deg);
     pointer-events: auto;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .page.turning-next {
